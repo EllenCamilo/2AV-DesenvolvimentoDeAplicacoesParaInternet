@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f7f7f7;
+}
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+.onlyPrint {
+  display: none;
+}
+
+@media print {
+  body {
+    padding: 10px !important;
+  }
+
+  .onlyPrint {
+    display: block;
+  }
+}
